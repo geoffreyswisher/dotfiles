@@ -1,26 +1,24 @@
-[essid]
-command=~/.config/i3blocks/scripts/essid
-interval=30
-#INTERFACE=wlan0
+[iface]
+command=~/.config/i3blocks/scripts/iface
+LABEL=enp8s0:
+IFACE=enp8s0
+##ADDRESS_FAMILY=inet6?
+color=#00FF00
+interval=10
 
-
-[wifi]
-command=~/.config/i3blocks/scripts/wifi
-label=wifi:
-#INTERFACE=wlan0
-interval=20
-#COLOR_GE80=#00FF00
-#COLOR_GE60=#FFF600
-#COLOR_GE40=#FFAE00
-#COLOR_LOWR=#FF0000
-#COLOR_DOWN=#FF0000
-
+[cpu_usage]
+command=~/.config/i3blocks/scripts/cpu_usage
+interval=10
+LABEL=CPU 
+#min_width=CPU: 100.00%
+#T_WARN=50
+#T_CRIT=80
+#DECIMALS=2
 
 [memory]
 command=~/.config/i3blocks/scripts/memory
 label=MEM  
 interval=10
-
 
 [time]
 command=~/.config/i3blocks/scripts/time
@@ -30,10 +28,3 @@ STRFTIME_FORMAT=%H:%M %d-%m
 TZONES=America/New_York
 TZ_LABELS=EST
 
-
-[battery]
-command=~/.config/i3blocks/scripts/battery
-interval=15
-#LABEL=Bat 
-LABEL=⚡ 
-#BAT_NUMBER=0

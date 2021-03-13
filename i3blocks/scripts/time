@@ -100,4 +100,5 @@ sub get_default_tz {
     return $tz;
 }
 
-print "#800080\n";
+print "Time messed up lol\n";
+print "#00FFFF\n";
